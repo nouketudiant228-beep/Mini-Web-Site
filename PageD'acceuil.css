@@ -1,0 +1,267 @@
+
+/* ==== CSS du contenu primaire page d'accueil ====*/
+
+.page_dacceuil {
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #4880c0;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px;
+    text-align: justify;
+    
+}
+
+/*
+.page_dacceuil h1 {
+    margin: 25px 0px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600px;
+    letter-spacing: 1px;
+    color: #0b3c73;
+}*/
+
+.page_dacceuil h1::after { /*ajouter des contenu apres page_dacceuil h1*/
+  content: "";
+  display: block;
+  width: 450px;
+  height: 2px;
+  background-color: #0b3c73;
+  margin: 12px auto 0px; /*haut, droit & gauche, bas*/
+  border-radius: 2px;
+}
+
+
+section {
+    padding: 16px;
+    border: 2px solid #003d6b;
+    margin: 30px 60px;
+    background-color: rgba(226, 233, 240, 0);
+    /*background-color: #fff6c1;*/
+    display: flex;
+    flex-direction: row;
+}
+
+.historique_BUT{
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.logo_BUT{
+    width: 170%;
+    background-color: rgba(226, 233, 240, 0);
+    padding: 30px;
+    height: auto;
+}
+
+.logo_BUT img {
+    max-width: 100%; /*image reste dans le conteneur*/
+}
+
+.iut_info{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.img_iut_info {
+    width: 150%;
+    padding: 16px;
+    height: auto;
+    transition: transform 400ms ease;
+    overflow: hidden;
+}
+
+.img_iut_info img {
+    max-width: 100%; /*image reste dans le conteneur*/
+    height: 100%;
+}
+
+/*effet zoom quand on passe la souris dessus*/
+.img_iut_info :hover {
+    transform: scale(1.2);
+}
+
+.liste_contact{
+    display: inline-block;
+    padding: 5px 15px;
+    padding-top: 0px;
+    border: 1px solid #003d6b;
+    border-radius: 10px;
+    margin: 10px;
+    justify-content: center;
+}
+
+.contact {
+    display: block;
+}
+
+.liste_competences{
+    display: block;
+}
+
+.texte_competences{
+    padding: 16px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.liste_competences section{
+    gap: 30px;
+}
+
+.competence1,
+.competence2,
+.competence3,
+.competence4,
+.competence5,
+.competence6 {
+    background-color: #ebeaf5;
+    border-color: #003d6b;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.competence1 li,
+.competence2 li,
+.competence3 li,
+.competence4 li,
+.competence5 li,
+.competence6 li {
+    list-style-type: disc;
+}
+
+.competence1{
+    margin-top: 0px;
+}
+
+.img_comp1 {
+    width: 45%;
+    padding: 16px;
+    height: auto;
+}
+
+.img_comp1 img{
+    max-width: 100%;
+    border: 1px solid black;
+}
+
+.img_comp2 {
+    width: 40%;
+    padding: 16px;
+    height: auto;
+}
+
+.img_comp2 img{
+    max-width: 100%;
+    border: 1px solid black;
+}
+
+.img_comp3 {
+    width: 55%;
+    padding: 16px;
+    height: auto;
+}
+
+.img_comp3 img{
+    max-width: 100%;
+    border: 1px solid black;
+}
+
+.img_comp4 {
+    width: 55%;
+    padding: 16px;
+    height: auto;
+}
+.img_comp4 img{
+    max-width: 100%;
+    border: 1px solid black;
+}
+
+.img_comp5 {
+    width: 55%;
+    padding: 16px;
+    height: auto;
+}
+
+.img_comp5 img{
+    max-width: 100%;
+    border: 1px solid black;
+
+}
+
+.img_comp6 {
+    width: 40%;
+    padding: 16px;
+    height: auto;
+}
+
+.img_comp6 img {
+    max-width: 100%;
+    border: 1px solid black;
+}
+
+.vie_etu{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.img_vie_etu{
+    width: 110%;
+    padding: 16px;
+    height: auto;
+}
+.img_vie_etu img {
+    max-width: 100%;
+    border: 1px solid black;
+}
+
+
+
+@media (max-width: 650px) {
+
+    .historique_BUT,
+    .iut_info,
+    .vie_etu,
+    .competence1,
+    .competence2,
+    .competence3,
+    .competence4,
+    .competence5,
+    .competence6 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .logo_BUT,
+    .img_iut_info,
+    .img_comp1,
+    .img_comp2,
+    .img_comp3,
+    .img_comp4,
+    .img_comp5,
+    .img_comp6,
+    .img_vie_etu {
+        width: auto;
+        height: auto;
+        padding: 16px;
+    }
+    
+    .footer-section {
+        width: 100%;
+    }
+}
+
+

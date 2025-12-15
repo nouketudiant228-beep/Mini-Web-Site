@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Contact</title>
+    <link rel="stylesheet" href="pageContact.css">
+    <link rel="stylesheet" href="competences.css">
+</head>
+<body>
+
+    <header class="head-nav">
+        <div class="head">
+            <img src="Images/logo-univ-tlse.png" alt="Logo Université de Toulouse" class="img_univtlse">
+            <img src="Images/logo-iut.png" alt="Logo IUT de Toulouse" class="img_iuttlse">
+            <img src="Images/logo-but-info.png" alt="Logo BUT Informatique - IUT Toulouse" class="img_butinfo">
+        </div>
+
+        <nav>
+            <div class="nav-container">
+                <div class="nav-item">
+                    <a href="PageD'acceuil.html">Accueil</a>
+                </div>
+                
+                <div class="nav-item">
+                    <a href="presentation.html">Présentation</a>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a href="#competences">Compétences</a>
+                    <div class="dropdown-content">
+                        <a href="competence1.html">Compétence 1</a>
+                        <a href="competence2.html">Compétence 2</a>
+                        <a href="competence3.html">Compétence 3</a>
+                        <a href="competence4.html">Compétence 4</a>
+                        <a href="competence5.html">Compétence 5</a>
+                        <a href="competence6.html">Compétence 6</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item">
+                    <a href="pageContact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="la-page">
+        <h1 class = "entete-form">Page de Contact</h1>
+        <form>
+            <label>Prénom :</label><br>
+            <input type="text" name="prenom"><br><br>
+
+            <label>Nom :</label><br>
+            <input type="text" name="nom"><br><br>
+
+            <label>Email :</label><br>
+            <input type="email" name="email"><br><br>
+
+            <label>Message :</label><br>
+            <textarea name="message" rows="5" cols="30"></textarea><br><br>
+
+            <button type="button">Envoyer</button>
+        </form>
+
+        <h2 class = "entete-form">Renseignements</h2>
+
+        <div class="Renseignements">
+
+            <img src="Images/img-IUT.jpg" alt="Photo de l'IUT">
+
+            <p class="infos">
+                <strong>Adresse :</strong><br>
+                IUT de Toulouse<br>
+                115 Rue de Narbonne<br>
+                31077 Toulouse Cedex 4
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.7689334739457!2d1.4627837759976094!3d43.56969767110629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebc40791e610b%3A0x44186f8c0017dff1!2sIUT%20Paul%20Sabatier%20(site%20de%20Rangueil-Montaudran)!5e0!3m2!1sfr!2stn!4v1764281501787!5m2!1sfr!2stn"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Plan du site</h3>
+                <ul>
+                    <li><a href="">Accueil</a></li>
+                    <li><a href="">Présentation</a></li>
+                    <li><a href="competence1.html">Compétence 1</a></li>
+                    <li><a href="competence2.html">Compétence 2</a></li>
+                    <li><a href="competence3.html">Compétence 3</a></li>
+                    <li><a href="competence4.html">Compétence 4</a></li>
+                    <li><a href="competence5.html">Compétence 5</a></li>
+                    <li><a href="competence6.html">Compétence 6</a></li>
+                    <li><a href="pageContact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>CNIL - RGPD</h3>
+                <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank">
+                    Voir le site de la CNIL
+                </a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Entreprise</h3>
+                <p>Site réalisé par l'équipe C-3</p>
+                <ul>
+                    <li>Erij</li>
+                    <li>Maelys</li>
+                    <li>intissar</li>
+                    <li>Yao</li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-copy">© 2025 DevWeb BUT Info - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
